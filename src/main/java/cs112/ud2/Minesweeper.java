@@ -16,33 +16,37 @@ public class Minesweeper extends Application implements EventHandler<ActionEvent
     public static void main(String[] args){
         launch(args);
     }
-    public Button startButton;
-    public Label startLabel;
+    //SETTING UP VARIABLES
+    private Button startButton;
+    private Label startLabel;
+
+    //Overrides the inherited class from Application, uses it to set up and execute the window/program
     @Override
     public void start(Stage primaryStage){
-        startLabel = new Label("Welcome to Minesweeper!");
-
-        startButton = new Button("Play!");
-        startButton.setOnAction(this);
+        //ASSIGNING VALUES TO THE VARIABLES/MAKING THEM COMPONENTS
+        startLabel = new Label("Welcome to Minesweeper!"); //makes it a label
+        startButton = new Button("Play!"); //makes it a button
+        startButton.setOnAction(this); //allows the button to print to the console when clicked
 
         //ADDING COMPONENTS
         VBox layout = new VBox(25); //15 = the spacing between components
-        layout.getChildren().add(startLabel);
-        layout.getChildren().add(startButton);
-        layout.setAlignment(Pos.CENTER);
+        layout.getChildren().add(startLabel); //gets the label for the layout
+        layout.getChildren().add(startButton); //gets the button for the layout
+        layout.setAlignment(Pos.CENTER); //positions the layout of the label and button to the center of the window
         startLabel.setFont(new Font("Arial",24)); //RESIZES THE LABEL AND CHANGES FONT
         startButton.setFont(new Font("Arial", 24)); //RESIZES THE BUTTON AND CHANGES FONT
         
         //DISPLAYING COMPONENTS
-        Scene scene = new Scene(layout, 400,400);
-        primaryStage.setScene(scene);
-        primaryStage.setTitle("Minesweeper");
-        primaryStage.show();
+        Scene scene = new Scene(layout, 400,400); //assigns data to the variable
+        primaryStage.setScene(scene); //sets up the window in accordance to the variable given
+        primaryStage.setTitle("Minesweeper"); //titles the window/program
+        primaryStage.show(); //shows the window
     }
 
+    //overrides the handler from the parent class, allows the button to respond by printing a message to the console
     @Override
     public void handle(ActionEvent actionEvent){
-        if (actionEvent.getSource()==startButton){
+        if (actionEvent.getSource() == startButton){ //checks that the source is the start button
             System.out.println("Start button was clicked!");
             //PLACEHOLDER UNTIL WE CAN ADD OTHER WINDOWS OR CHANGE THE LAYOUT TO INDICATE STARTING THE GAME
         }
