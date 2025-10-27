@@ -6,5 +6,8 @@ Modify this file to contain a description of your project, as well as your GUI w
 
 Use [Markdown](https://www.markdownguide.org/basic-syntax) to format appropriately.
 
+Minesweeper Class Overview:
+This class acts as the main driver for the rest of the program, being the 'home base' of the GUI components. Currently, it sets up the start page and then moves on to the difficulty page when the play button is clicked it will then display the difficulty buttons, upon which, they will provide data about the class that each difficulty is based upon. For example, when the Easy button is clicked, it will print a message to the console saying that it was clicked, and then it will access the Easy class to utilize its toString to then print that to the console to display the data stored in that class.
+
 ## GUI Wireframe
 Embed your wireframe image(s) here!
