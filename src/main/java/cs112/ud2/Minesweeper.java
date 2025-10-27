@@ -11,6 +11,19 @@ import javafx.event.EventHandler;       //interface for handling events
 import javafx.event.ActionEvent;        //class for type of event for action (like button or key pressed)
 
 import javafx.scene.text.Font;          //Assists with text resizing
+
+/* Minesweeper
+*  This class acts as the main driver for the rest of the program, being the 'home base' of the GUI components.
+* Currently, it sets up the start page and then moves on to the difficulty page when the play button is clicked
+* it will then display the difficulty buttons, upon which, they will provide data about the Model class that each
+* difficulty is based upon.
+* For example, when the Easy button is clicked, it will print a message to the console saying that it was clicked,
+* and then it will access the Easy class to utilize its toString to then print that to the console to display the
+* data stored in that class.
+*
+* @author Noah Shew
+* @version v3
+*/
 public class Minesweeper extends Application implements EventHandler<ActionEvent>{
 
     public static void main(String[] args){
