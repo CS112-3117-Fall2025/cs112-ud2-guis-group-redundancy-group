@@ -24,17 +24,6 @@ The board automatically scales based on difficulty:
 A Back button returns the user to the start screen.  
 This setup connects directly to the Minesweeper class but is ready to integrate with the model (`Board`, `Cell`, and `Difficulty`) in the next unit.
 
-## **GUI Wireframe**
-
-Below are the wireframes showing the layout flow of the app:
-
-1. **Welcome Screen** – Title and Play button  
-2. **Difficulty Screen** – Easy, Medium, Hard buttons  
-3. **Board Screen** – Grid of cells with a Back button  
-
-![Wireframe Overview](images/wireframe1.png)
-![Board Layout](images/wireframe2.png)
-
 ### **Current Features**
 - Buttons switch between scenes correctly  
 - Board size changes with difficulty  
@@ -46,5 +35,24 @@ Below are the wireframes showing the layout flow of the app:
 - Add flagging and reveal logic  
 - Implement win/loss conditions
 
-## GUI Wireframe
-Embed your wireframe image(s) here!
+## GUI and Wireframe
+### wireframe  
+![basic wireframe](wireframe.png)
+![complete wireframe](wireframe1.jpeg)
+
+### Start Screen  
+![Start Screen](Start.png)
+
+## Difficulty Screen
+[Difficulty](Difficulty.png)
+
+### Board Screens
+**Easy**  
+![Easy Screen](easy.png)
+
+**Medium**  
+![Medium Screen](medium.png)
+
+**Hard**  
+![Hard Screen](hard.png)
+
