@@ -1,13 +1,50 @@
-Jeff Peterson, Noah Shew, Drew Sullivan
+Jeff Peterson, Noah Shew, Drew Sullivan  
 
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=21297565)
-# Unit Deliverable 2 - Final Project GUI
-Modify this file to contain a description of your project, as well as your GUI wireframe images. You can add them to your project directory and use a relative path, or upload them to [imgur](https://imgur.com/upload).
 
-Use [Markdown](https://www.markdownguide.org/basic-syntax) to format appropriately.
+# Unit Deliverable 2 – Final Project GUI
 
-Minesweeper Class Overview:
-This class acts as the main driver for the rest of the program, being the 'home base' of the GUI components. Currently, it sets up the start page and then moves on to the difficulty page when the play button is clicked it will then display the difficulty buttons, upon which, they will provide data about the class that each difficulty is based upon. For example, when the Easy button is clicked, it will print a message to the console saying that it was clicked, and then it will access the Easy class to utilize its toString to then print that to the console to display the data stored in that class.
+This project builds the Minesweeper GUI using JavaFX.  
+It includes a start screen, a difficulty selection screen, and a working board display that changes size with difficulty.  
+
+### **Minesweeper Class Overview**  
+This class acts as the main driver for the rest of the program, being the “home base” of the GUI components.  
+It sets up the start page, then moves to the difficulty page when the Play button is clicked.  
+When a difficulty button is selected, it prints data from the related model class (Easy, Medium, Hard) and loads the board layout.  
+
+### **BoardGUI Class Overview**  
+The `BoardGUI` class builds the main Minesweeper board screen.  
+It creates a grid of clickable buttons representing cells.  
+Each cell prints its coordinates when clicked.  
+The board automatically scales based on difficulty:
+- Easy → 4×4  
+- Medium → 5×5  
+- Hard → 6×6  
+
+A Back button returns the user to the start screen.  
+This setup connects directly to the Minesweeper class but is ready to integrate with the model (`Board`, `Cell`, and `Difficulty`) in the next unit.
+
+## **GUI Wireframe**
+
+Below are the wireframes showing the layout flow of the app:
+
+1. **Welcome Screen** – Title and Play button  
+2. **Difficulty Screen** – Easy, Medium, Hard buttons  
+3. **Board Screen** – Grid of cells with a Back button  
+
+![Wireframe Overview](images/wireframe1.png)
+![Board Layout](images/wireframe2.png)
+
+### **Current Features**
+- Buttons switch between scenes correctly  
+- Board size changes with difficulty  
+- Each cell is clickable  
+- Back button works  
+
+### **Next Steps**
+- Connect the `Board` and `Cell` classes  
+- Add flagging and reveal logic  
+- Implement win/loss conditions
 
 ## GUI Wireframe
 Embed your wireframe image(s) here!
