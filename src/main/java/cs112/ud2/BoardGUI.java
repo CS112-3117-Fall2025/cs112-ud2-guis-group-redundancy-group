@@ -61,7 +61,7 @@ public class BoardGUI {
             }
         }
 
-        // --- back button ---
+        // back button
         Button back = new Button("Back");
         back.setFont(new Font("Arial", 16));
         back.setOnAction(e -> {
