@@ -77,7 +77,7 @@ public class Minesweeper extends Application implements EventHandler<ActionEvent
             new BoardGUI().show((Stage) mediumButton.getScene().getWindow(), "Medium", 5, 5);   //opens the Medium board GUI showing a 5x5 grid
         } else if (actionEvent.getSource() == hardButton){
             System.out.println("Hard button was clicked!");
-            new BoardGUI().show((Stage) hardButton.getScene().getWindow(), "Hard", 6, 6);  //opens the Hard board GUI showing a 6x6 grid
+            new BoardGUI().show((Stage) hardButton.getScene().getWindow(), "Hard", 6, 6);  //opens the Hard board GUI showing 6x6 grid
         }
     }
 
