@@ -71,12 +71,13 @@ public class Minesweeper extends Application implements EventHandler<ActionEvent
             String easy = new Easy().toString(); //Calls on the Easy class to print its stored data
             System.out.println(easy); //prints the data
             //can also do custom values by doing String easy = new Easy("Custom", #,#,#,#).toString();
+            new BoardGUI().show((Stage) easyButton.getScene().getWindow(), "Easy", 4, 4);  //opens the Easy board GUI showing a 4x4 grid
         } else if (actionEvent.getSource() == mediumButton){
             System.out.println("Medium button was clicked!");
-            //new Medium();
+            new BoardGUI().show((Stage) mediumButton.getScene().getWindow(), "Medium", 5, 5);   //opens the Medium board GUI showing a 5x5 grid
         } else if (actionEvent.getSource() == hardButton){
             System.out.println("Hard button was clicked!");
-            //new Hard();
+            new BoardGUI().show((Stage) hardButton.getScene().getWindow(), "Hard", 6, 6);  //opens the Hard board GUI showing a 6x6 grid
         }
     }
 
